@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Mukicik.View.Main" %>
+
+<!DOCTYPE html>
+    <style>
+        ul {
+            margin : 0;
+            padding : 0;
+            overflow : hidden;
+            list-style-type : none;
+            background-color : dodgerblue;
+        }
+        li {
+            float : left;
+        }
+        li a{
+            padding : 14px 16px;
+            display : inline;
+            color : black;
+            background-color : dodgerblue;
+            text-decoration : none;
+        }
+        li a:hover{
+            background-color : lightblue;
+        }
+    </style>
+<html>
+<head runat="server">
+    <title>Mukicik_backend</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <ul>
+            <li> <a href="#">Mukicik</a></li>
+            <li> <a href="Home.aspx">Home</a> </li>
+            <li> <a href="Products.aspx">Products</a> </li>
+            <li> <a href="Insert.aspx">Insert Products</a> </li>
+            <li> <a href="Edit.aspx">Edit Products</a> </li>
+            <li> <a href="Login.aspx">Login</a> </li>
+            <li> <a href="Register.aspx">Register</a> </li>
+        </ul>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
