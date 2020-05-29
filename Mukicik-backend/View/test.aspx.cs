@@ -11,24 +11,17 @@ using System.Web.UI.WebControls;
 namespace Mukicik_backend.View
 {
     public partial class testpurpose : System.Web.UI.Page
-    { 
+    {
+        protected static Database1Entities db = new Database1Entities();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["userSession"] != null)
             {
-                using (Database1Entities db = new Database1Entities())
-                {
-                    /* string userName = Session["userSession"].ToString();
-                    int userID = db.Users.Where(obj => obj.userName == userName).Select(x=>x.userID).FirstOrDefault(); 
+                /* string userName = Session["userSession"].ToString();
+                int userID = db.Users.Where(obj => obj.userName == userName).Select(x=>x.userID).FirstOrDefault(); 
 
-                    test2.Text = userID.ToString();
-                    test3.Text = userName; */
-                }
-
-            }
-
-            using (Database1Entities db = new Database1Entities())
-            {
+                test2.Text = userID.ToString();
+                test3.Text = userName; */
             }
             TimeSpan todayTime = DateTime.Now.TimeOfDay;
             outputLabel2.Text = todayTime.ToString();
@@ -71,6 +64,3 @@ namespace Mukicik_backend.View
         }
     }
 }
-
-/* bug1: clicking upload after a successful image upload and page refresh */
-/* bug2: uploading a same file name, will replace previous uploaded file */

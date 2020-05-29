@@ -2,6 +2,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <style>
+        table {
+            border : 1px solid black;
+        }
+    </style>
     <table>
         <tr>
             <td>
@@ -15,13 +20,16 @@
                 <asp:Image ID="image1" height="100" Width="100" runat="server" /> <br />
             </td>
         </tr>
-
+    </table>
+    <table>
         <tr>
             <td><asp:Calendar runat="server" ID="calendarTest"></asp:Calendar></td>
             <td><asp:Button Text="refresh" runat="server" onclick="Page_Load"/></td>
             <td><asp:Label ID="outputLabel" Text="" runat="server" /></td>
             <td><asp:Label ID="outputLabel2" Text="" runat="server" /></td>
         </tr>
+    </table>
+    <table>
         <tr>
             <td>
                 <asp:RadioButton Text="Male" ID="button_male" runat="server" />
