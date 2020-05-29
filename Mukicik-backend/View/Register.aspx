@@ -36,11 +36,6 @@
             </td>
         </tr>
         <tr>
-            <td><asp:Label Text="Role" runat="server" /></td>
-            <td><asp:TextBox ID="input_role" runat="server" /></td>
-            <td><asp:RequiredFieldValidator ErrorMessage="Must be filled!" forecolor="red" ControlToValidate="input_role" runat="server" /></td>
-        </tr>
-        <tr>
             <td><asp:Label Text="Profile Picture Link" runat="server" /></td>
             <td><asp:TextBox ID="input_userPP" runat="server"/></td>
         </tr>

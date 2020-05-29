@@ -18,6 +18,7 @@
             </td>
         </tr>
     </table>
+    <asp:PlaceHolder ID="product_placeholder" runat="server" Visible="false"> 
     <table>
         <tr>
             <td> Selected Item</td>
@@ -35,8 +36,9 @@
         <tr>
             <td></td>
             <td><asp:Button ID="button_addToCart" Text="Add to cart" runat="server" OnClick="button_addToCart_Click" /></td>
-            <td><asp:Label ID="label_error" Text="" runat="server" ForeColor="red" /></td>
+            <td><asp:Label ID="label_error" Text="" runat="server" ForeColor="red" /> <asp:Label ID="label_success" Text="" runat="server" ForeColor="green" /></td>
         </tr>
     </table>
+    </asp:PlaceHolder>
     
 </asp:Content>

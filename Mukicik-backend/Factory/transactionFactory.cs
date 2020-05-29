@@ -8,10 +8,10 @@ namespace Mukicik_backend.Factory
 {
     public class transactionFactory
     {
-        public static Transaction generateTransaction(DateTime transactionDate, int userID)
+        public static Transaction generateTransaction(int userID)
         {
             Transaction gt = new Transaction();
-            gt.transactionDate = transactionDate;
+            gt.transactionDate = DateTime.Now;
             gt.userID = userID;
             return gt;
         }

@@ -33,12 +33,19 @@
     <form id="form1" runat="server">
         <ul>
             <li> <a href="#">Mukicik</a></li>
-            <li> <a href="Home.aspx">Home</a> </li>
-            <li> <a href="Products.aspx">Products</a> </li>
-            <li> <a href="Insert.aspx">Insert Products</a> </li>
-            <li> <a href="Edit.aspx">Edit Products</a> </li>
-            <li> <a href="Login.aspx">Login</a> </li>
-            <li> <a href="Register.aspx">Register</a> </li>
+            <li> <asp:HyperLink NavigateUrl="Home.aspx" Text="Home" runat="server" /></li>
+            <li> <asp:HyperLink NavigateUrl="Products.aspx" Text="Products" runat="server" /></li>
+            <li> <asp:HyperLink ID="button_cart" EnableViewState="false" NavigateUrl="Cart.aspx" Text="Cart" runat="server" /></li>
+             <li> <asp:HyperLink ID="button_transactions" EnableViewState="false" NavigateUrl="transactionPage.aspx" Text="Transaction" runat="server" /></li>
+
+            <li> <asp:HyperLink ID="button_insert" EnableViewState="false" NavigateUrl="Insert.aspx" Text="Insert" runat="server" /></li>
+            <li> <asp:HyperLink ID="button_edit" EnableViewState="false" NavigateUrl="Edit.aspx" Text="Edit" runat="server" /></li>
+
+            <li> <asp:HyperLink ID="button_register" EnableViewState="true" NavigateUrl="Register.aspx" Text="Register" runat="server" /> </li>
+            <li> <asp:LinkButton ID="button_login2" EnableViewState="true" OnClick="button_login2_Click" Text="Login" runat="server" CausesValidation="false" /></li>
+
+            <li> <asp:Label Text="" ID="label_userSession" runat="server" /></li>
+            <li> <asp:Label Text="" ID="label_userRole" runat="server" /></li>
         </ul>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

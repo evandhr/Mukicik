@@ -12,10 +12,15 @@ namespace Mukicik_backend.View
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        if (Session["userSession"] != null)
+            if (Session["userSession"] != null)
             {
-            label_userSession.Text = "Logged in as : " + Session["userSession"].ToString();
-            placeholder_userSession.Visible = true;
+                label_userSession.Text = "Logged in as : " + Session["userSession"].ToString();
+                placeholder_userSession.Visible = true;
+                if (Session["userCart"] != null)
+                {
+                    label_userCart.Text = "UserCart : " + Session["userCart"].ToString();
+                    placeholder_userCart.Visible = true;
+                } else placeholder_userCart.Visible = false;
             }
             else placeholder_userSession.Visible = false;       
         }

@@ -95,6 +95,7 @@
     <Content Include="View\Products.aspx" />
     <Content Include="View\Register.aspx" />
     <Content Include="View\test.aspx" />
+    <Content Include="View\transactionPage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -178,6 +179,9 @@
       <DependentUpon>Main.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="View\Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
     <Compile Include="View\Products.aspx.cs">
       <DependentUpon>Products.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -198,6 +202,13 @@
     </Compile>
     <Compile Include="View\test.aspx.designer.cs">
       <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\transactionPage.aspx.cs">
+      <DependentUpon>transactionPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\transactionPage.aspx.designer.cs">
+      <DependentUpon>transactionPage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

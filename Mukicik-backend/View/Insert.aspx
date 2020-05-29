@@ -2,6 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:PlaceHolder ID="placeholder_insertProduct" Visible="false" runat="server">
     <table>
         <tr>
             <td> <asp:Label Text="Product Name" runat="server" /> </td>
@@ -42,4 +43,5 @@
             <td> <asp:Label ID="label_errorLabel" Text="" runat="server" /> </td>
         </tr>
     </table>
+    </asp:PlaceHolder>
 </asp:Content>

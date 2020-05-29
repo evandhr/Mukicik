@@ -9,21 +9,24 @@ namespace Mukicik_backend.Repository
 {
     public class transactionRepository
     {
-        public static void createTransaction(DateTime date, int userID)
+        protected static Database1Entities db = new Database1Entities();
+        public static void createTransaction(int userID)
         {
-            Database1Entities db = new Database1Entities();
-            Transaction nt = transactionFactory.generateTransaction(date, userID);
+            Transaction nt = transactionFactory.generateTransaction(userID);
             db.Transactions.Add(nt);
             db.SaveChanges();
 
         }
-        public static Transaction getTransactionID(int userID)
+
+        public static List<Transaction> GetTransactions(int userID)
         {
-            using (Database1Entities db = new Database1Entities())
-            {
-                var temp = (from x in db.Transactions where x.userID == userID select x).ToList();
-                return temp[0];
-            }
+            List<Transaction> lt = db.Transactions.Where(x => x.userID == userID).Select(x => x).ToList();
+            return lt;
+        }
+
+        public static int getTransactionID(int userID)
+        {
+            return (from x in db.Transactions where x.userID == userID select x.transactionID).FirstOrDefault();
         }
     }
 }

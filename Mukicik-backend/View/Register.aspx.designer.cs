@@ -105,15 +105,6 @@ namespace Mukicik_backend.View
         protected global::System.Web.UI.WebControls.RequiredFieldValidator validator_Calendar1;
 
         /// <summary>
-        /// input_role control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox input_role;
-
-        /// <summary>
         /// input_userPP control.
         /// </summary>
         /// <remarks>

@@ -2,6 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:PlaceHolder ID="placeholder_edit" runat="server" Visible="false">
     <table>
         <tr>
             <td>
@@ -11,7 +12,7 @@
         <tr>
             <td>
                 <asp:GridView 
-                    ID="gvProducts" 
+                    ID="gvEdit" 
                     runat="server" 
                     AutoGenerateSelectButton="true"
                     OnSelectedIndexChanged="gvProducts_SelectedIndexChanged"/>
@@ -55,9 +56,10 @@
             <td></td>
             <td> 
                 <asp:Button ID="button_editProduct" Text="Edit" runat="server" OnClick="button_edit_Click"/>
-                <asp:Button ID="button_removeProduct" Text="Deelte" runat="server" OnClick="button_remove_Click"/>
+                <asp:Button ID="button_removeProduct" Text="Delete" runat="server" OnClick="button_remove_Click"/>
             </td>
             <td> <asp:Label ID="label_errorLabel" Text="" runat="server" /> </td>
         </tr>
     </table>
+        </asp:PlaceHolder>
 </asp:Content>

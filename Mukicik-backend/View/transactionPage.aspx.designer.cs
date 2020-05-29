@@ -11,43 +11,34 @@ namespace Mukicik_backend.View
 {
 
 
-    public partial class Home
+    public partial class transactionPage
     {
 
         /// <summary>
-        /// placeholder_userSession control.
+        /// placeholder_user control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder placeholder_userSession;
+        protected global::System.Web.UI.WebControls.PlaceHolder placeholder_user;
 
         /// <summary>
-        /// label_userSession control.
+        /// gvTransactionList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label label_userSession;
+        protected global::System.Web.UI.WebControls.GridView gvTransactionList;
 
         /// <summary>
-        /// placeholder_userCart control.
+        /// gvTransactionDetail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder placeholder_userCart;
-
-        /// <summary>
-        /// label_userCart control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label label_userCart;
+        protected global::System.Web.UI.WebControls.GridView gvTransactionDetail;
     }
 }

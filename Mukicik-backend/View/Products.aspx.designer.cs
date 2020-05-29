@@ -24,6 +24,15 @@ namespace Mukicik_backend.View
         protected global::System.Web.UI.WebControls.GridView gvProducts;
 
         /// <summary>
+        /// product_placeholder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder product_placeholder;
+
+        /// <summary>
         /// input_productName control.
         /// </summary>
         /// <remarks>
@@ -67,5 +76,14 @@ namespace Mukicik_backend.View
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label label_error;
+
+        /// <summary>
+        /// label_success control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label label_success;
     }
 }

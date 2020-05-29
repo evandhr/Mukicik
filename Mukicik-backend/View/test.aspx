@@ -32,13 +32,5 @@
                 <asp:Label ID="label_gender" Text="" runat="server" />
             </td>
         </tr>
-        <tr>
-            <td><asp:Label Text="Add category" runat="server" /></td>
-            <td><asp:TextBox ID="input_addCategory" runat="server" /></td>
-            <td><asp:Button OnClick="addCategory_click" Text="Add" runat="server" /></td>
-        </tr>
-        <tr>
-            <td> <asp:GridView ID="gv_category" runat="server"> </asp:GridView></td>
-        </tr>
     </table>
 </asp:Content>

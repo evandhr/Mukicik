@@ -15,6 +15,15 @@ namespace Mukicik_backend.View
     {
 
         /// <summary>
+        /// placeholder_insertProduct control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder placeholder_insertProduct;
+
+        /// <summary>
         /// input_productName control.
         /// </summary>
         /// <remarks>

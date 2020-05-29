@@ -15,13 +15,22 @@ namespace Mukicik_backend.View
     {
 
         /// <summary>
-        /// gvProducts control.
+        /// placeholder_edit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvProducts;
+        protected global::System.Web.UI.WebControls.PlaceHolder placeholder_edit;
+
+        /// <summary>
+        /// gvEdit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvEdit;
 
         /// <summary>
         /// input_productID control.

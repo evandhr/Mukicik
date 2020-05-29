@@ -14,11 +14,21 @@ namespace Mukicik_backend.View
     { 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["userSession"] != null)
+            {
+                using (Database1Entities db = new Database1Entities())
+                {
+                    /* string userName = Session["userSession"].ToString();
+                    int userID = db.Users.Where(obj => obj.userName == userName).Select(x=>x.userID).FirstOrDefault(); 
+
+                    test2.Text = userID.ToString();
+                    test3.Text = userName; */
+                }
+
+            }
+
             using (Database1Entities db = new Database1Entities())
             {
-                List<Category> categories = db.Categories.ToList();
-                gv_category.DataSource = categories;
-                gv_category.DataBind();
             }
             TimeSpan todayTime = DateTime.Now.TimeOfDay;
             outputLabel2.Text = todayTime.ToString();
@@ -56,8 +66,8 @@ namespace Mukicik_backend.View
 
         protected void addCategory_click(object sender, EventArgs e)
         {
-            string name = input_addCategory.Text;
-            categoryRepository.createCategory(name); 
+            /* string name = input_addCategory.Text; */
+            /* categoryRepository.createCategory(name); */
         }
     }
 }

@@ -27,7 +27,7 @@ namespace Mukicik_backend.View
                     password = input_userPassword.Text,
                     gender = null,
                     userDOB = input_userDOB.Text,
-                    userRole = input_role.Text,
+                    userRole = "User",
                     userImage = input_userPP.Text;
 
                 if (Chk_Female.Checked) gender = "female";
